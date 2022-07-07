@@ -1,0 +1,35 @@
+<%- include('partials/head.ejs') %>
+
+    <body>
+        <%- include('partials/navbar.ejs') %>
+            <% if(cadastrado){%>
+                
+         <%   } %> 
+            <section class="container">
+                <article>
+                    <h1>Cadastro de posts</h1>
+
+                    <form action="/salvar-post" method="post">
+                        <div>
+                            <label for="">Titulo</label>
+                            <input type="text" placeholder="Digite o titulo" name="titulo" id="">
+                        </div>
+                        <div>
+                            <label for="">Texto</label>
+                            <textarea name="texto" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit">cadastrar</button>
+                        </div>
+                    </form>
+                </article>
+
+            </section>
+
+
+
+
+            <%- include('partials/footer.ejs') %>
+    </body>
+
+    </html>

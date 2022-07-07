@@ -1,0 +1,39 @@
+<%- include('partials/head.ejs') %>
+
+  <body>
+    <%- include('partials/navbar.ejs') %>
+
+
+      <section class="container">
+        <article class="content">
+          <h1>Posts</h1>
+          <div class="posts">
+            <% posts.forEach( (item)=>{%>
+              <div class="post">
+                <h3><%= item.title %> </h3>
+                <p><%= item.text %> </p>
+
+                <% if(item.star){%>
+                  <% for(let index =0; index < item.star; index ++){ %>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Star_icon_stylized.svg/1077px-Star_icon_stylized.svg.png" alt="" width="20">
+
+                    <% } %> 
+
+                 <%  } %> 
+            
+              </div>
+              <%}) %>
+
+
+          </div>
+        </article>
+
+      </section>
+
+
+
+
+      <%- include('partials/footer.ejs') %>
+  </body>
+
+  </html>

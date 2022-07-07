@@ -1,0 +1,13 @@
+PRINCIPAIS COMANDOS GIT
+git config --global user.email 'seuemail'
+git config --global user.name 'nome de usuario'
+ver versao do git ( git --version)
+git init 
+git remote add origim 'link do projeto'
+git status
+git add .
+git commit -m 'comentario'
+git  log   - historico de commits
+git push origin master  - ( mandar conteudo para o github)
+git clone +  link do projeto no git hub
+

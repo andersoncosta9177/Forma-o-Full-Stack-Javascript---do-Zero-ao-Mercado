@@ -1,0 +1,461 @@
+:root {
+    --color-primary: #917758;
+    --color-secondary: #3c2915;
+    --color-primary-light: #f5eee6;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+  
+}
+
+.home {
+    height: 100vh;
+    position: relative;
+    background: url('../images/bg-home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.home .header {
+    padding: 30px 0;
+}
+
+.home .header .nav {
+    display: flex;
+    justify-content: center;
+}
+
+.home .header .nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.home .header .nav ul li {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: center;
+}
+
+.home .header .nav ul li a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 18px;
+
+}
+
+.home .header .nav ul li a:hover {
+    border-bottom: 1px solid var(--color-primary);
+    color: var(--color-primary);
+
+}
+
+.home .header .nav ul li .logo {
+    margin: 0 30px;
+}
+
+
+/* Home  - banner */
+
+.banner {
+    color: white;
+    text-align: center;
+}
+
+.home .banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 270px;
+    width: 770px;
+    margin-left: -385px;
+    margin-top: -75px;
+    color: white;
+    text-align: center;
+}
+
+.home .banner span {
+    display: block;
+}
+
+.home .banner .slogan1 {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 14px;
+
+}
+
+.home .banner h1 {
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home .banner .slogan2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+/* estilo link sobre  */
+.about {
+   
+    background-color: var(--color-primary);
+}
+
+
+.about .container {
+    display: flex;
+}
+
+.about .timing {
+    background-image: url('../images/brush-big.jpg');
+    width: 33%;
+    padding: 20px;
+    top: -50px;
+    position: relative;
+    /* height: 500px; */
+
+}
+
+.about .timing .overlay {
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 40px 20px;
+
+}
+
+.about .timing .icon-cut {
+    width: 50px;
+}
+
+.about .timing h3 {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--color-primary);
+    width: fit-content;
+    margin: 0 auto 30px auto;
+    font-size: 30px;
+
+}
+
+.about .timing .text {
+    margin: 10px 0;
+
+}
+
+.about .timing .text::after {
+    content: '•';
+    display: block;
+    color: white;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.about .timing .text:last-of-type:after {
+    content: '|';
+   
+}
+
+.about .timing .text h4 {
+    color: gray;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.about .timing  span {
+    color: white;
+    font-size: 15px;
+ 
+    display: block;
+}
+
+
+
+
+.about .experience{
+    color: white;
+    width: 66%;
+    margin-left: 7%;
+    margin-top: 100px;
+
+}
+
+.about .experience h2{
+    font-weight:  400;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.about .experience h2:after{
+    display: block;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: #a38f78;
+    margin: 20px 0;
+}
+
+.about .experience .text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about .experience .text  p{
+    margin-bottom:  20px;
+    font-weight: 100;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    word-spacing: 2px;
+    line-height: 25px;
+    
+}
+
+
+
+/* SERCIÇOS */
+.services{
+    padding: 100px 0;
+    background-color: var(--color-primary-light);
+    text-align: center;
+}
+.services h2{
+    margin-bottom: 10px;
+    color: var(--color-secondary);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.services .boxes{
+    display: flex;
+    justify-content: space-between;
+    margin-top:  50px;
+}
+
+.services .box{
+    border:  3px solid var(--color-secondary);
+    padding: 50px 40px;
+    margin: 30px;
+    border-radius: 8px;
+  
+}
+
+.services .box:hover{
+   background-color:  #ece1d6;
+   box-shadow:  0 0 15px var(--color-secondary);
+   transition: .3s;
+
+}
+
+
+.services .box h4{
+    color: var(--color-secondary);
+    margin-top: 30px;
+
+}
+
+.services .box p{
+margin-top: 25px;
+font-size: 15px;
+line-height: 26px;
+
+}
+
+/* apppointment */
+.apppointment{
+    padding: 100px 0;
+    background-color: var(--color-primary);
+    height: 100vh;
+    background-image:url('../images/chair-ic.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 300px;
+}
+
+.apppointment h2{
+color: var(--color-primary-light);
+font-weight: 400;
+font-size: 50px;
+margin-bottom: 10px;
+text-align: center;
+}
+
+.apppointment img{
+    margin: 0 auto;
+    display: block;
+}
+
+.apppointment form{
+    margin-top: 80px;
+}
+.apppointment .personal-data{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.apppointment  .input-wrapper{
+    width: 100%;
+    margin-right:50px;
+}
+
+.apppointment .input-wrapper:last-of-type{
+    margin-right: 0;
+}
+.apppointment  label{
+font-size: 14px;
+   display: block;
+   margin-bottom: 2px;
+   color: var(--color-primary-light);
+}
+
+.apppointment .personal-data input,
+.apppointment .personal-data select,
+.apppointment textarea
+{
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+}
+.apppointment textarea{
+    height: 150px;
+}
+
+.apppointment button{
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.gallery{
+    padding:  100px 0;
+     background-color: var(--color-primary-light);
+    
+}
+
+.gallery h2{
+    color: var(--color-secondary);
+    font-weight:  400;
+    font-size: 50px;
+    margin-bottom:  10px;
+    text-align: center;
+
+
+
+}
+
+.gallery img{
+  margin:  0 auto;
+  display: block;
+}
+
+ .gallery .gallery-wrapper{
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     width: 900px;
+     height: 100vh;
+     margin: 50px auto;
+}
+
+.gallery .gallery-wrapper div{
+    border:  10px solid var(--color-primary);
+    margin: 6px;
+    width: 33%;
+}
+
+.gallery .gallery-wrapper div img{
+    width: 100%;
+}
+
+/* LOCATION */
+.location{
+
+    padding: 100px 0;
+    background: url('../images/bg-location.jpg');
+    background-size: cover;
+}
+
+.location .head{
+    display: flex;
+    justify-content: space-between;
+    background-color: #191919;
+    padding:  40px;
+    width: 100%;
+
+
+}
+
+.location .head .info{
+    display: flex;
+    align-items: center;
+}
+
+.location .head .info .icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-primary);
+  border-radius: 100%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.location .head .info .text span{
+    display: block;
+    font-size: 13px;
+}
+
+.location .head .info .text span:first-child{
+   color:silver;
+}
+.location .head .info .text span:last-child{
+    color:white;
+ }
+
+ .location .map {
+    width: 100%;
+
+ }
+
+ .location .map iframe{
+    width: 100%;
+ }
+
+ .footer{
+    background-color: #191919;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 13px;
+ }

@@ -1,0 +1,38 @@
+.navbar{
+    height: 80px;
+  background-color: rgb(11, 159, 164);
+  list-style-type: none;
+  box-shadow:  4px 3px 3px rgb(17, 30, 31);
+}
+.navbar ul{
+    margin-left: 20px;
+    list-style: none;
+
+}
+.navbar ul li{
+    float: left;
+    margin-left: 10px;
+}
+.navbar li a{
+    color: white;
+    margin-left: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px;
+    
+}
+.navbar li a:hover{
+  color: rgb(206, 204, 204);
+    
+}
+
+.corText{
+  color: rgb(11, 159, 164);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.data{
+  color:rgb(8, 5, 32) ;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}

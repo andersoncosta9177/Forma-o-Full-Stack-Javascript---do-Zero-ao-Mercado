@@ -1,0 +1,29 @@
+<%- include('partials/head.ejs') %> 
+<body>
+<%-include('partials/navbar.ejs') %> 
+<br>
+<div class="m-3">
+    <h1 class="display-6 text-primary  text-center">Cadastro de usuario</h1>
+    <form action="/register/add" method="post" class="form-group">
+    <label for="">Nome:</label>
+    <input class="form-control" type="text" name="name" id="" placeholder="Digite seu nome">
+    <label for="">Idade:</label>
+    <input class="form-control" type="text" name="age" id="age" placeholder="Digite sua idade">
+    <label for="">E-mail:</label>
+    <input class="form-control" type="text" name="email" id="email" placeholder="Digite seu e-mail">
+    <label for="">Senha:</label>
+    <input class="form-control" type="text" name="password" id="password" placeholder="Digite sua senha">
+      
+    <div>
+        <button class="btn btn-primary mt-2" type="submit">Cadastrar</button>
+    
+    </div>
+    </form>
+    
+</div>
+
+
+
+<%- include('partials/footer.ejs') %> 
+   
+</body>

@@ -1,0 +1,51 @@
+<%- include('partials/head.ejs') %> 
+<body>
+  <%- include('partials/navbar.ejs') %> 
+
+
+<h3 class="corText mt-4 text-center ">Lista de usuarios cadastrados</h3>
+
+
+<div class="container">
+  <table class="table table-bordered  ">
+    <thead class="table-dark">
+     <tr>
+       <th>Nome</th>
+       <th>Idade</th>
+       <th>E-mail</th>
+       <th>Ações</th>
+     </tr>
+    </thead>
+   
+     <% users.forEach( (user)=>{%>
+ <tbody class="">
+  <tr>
+    <td class="data"><%=user.name %> </td>
+    <td class="data"><%=user.age %> </td>
+    <td class="data"><%=user.email %> </td>
+    <td>
+     <a href="/remove/<%=user._id%> "  class="btn btn-outline-danger">Excluir</a>
+     <a href="/edit?id=<%=user._id%> " class=" ms-4 btn btn-outline-primary">Editar</a>
+   </td>
+  </tr>
+ </tbody>
+       <%}) %> 
+     
+   </table>
+  
+</div>
+
+
+
+
+
+
+
+<ul class="listClient">
+
+    
+</ul>
+
+<%- include('partials/footer.ejs') %> 
+   
+</body>
