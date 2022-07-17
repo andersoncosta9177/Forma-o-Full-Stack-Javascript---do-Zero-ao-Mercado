@@ -1,0 +1,16 @@
+
+h1{
+    color: blueviolet;
+    font-size: 23px;
+    margin:  10px;
+}
+
+h2{
+    font-size:  18px;
+    color: blue;
+    margin: 10px;
+}
+
+Header{
+    background-color: black;
+}

@@ -1,12 +1,11 @@
-import React from "react";
-// import style  from './style.css'
 
-const Content =({titulo,children})=>{
-    return(
-        <article className="content">
+
+
+const Content = ({ children,titulo }) => {
+    return (
+        <article>
             <h2>{titulo}</h2>
             {children}
-
         </article>
     )
 }

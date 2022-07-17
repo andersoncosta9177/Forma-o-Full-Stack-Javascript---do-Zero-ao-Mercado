@@ -1,18 +1,14 @@
-import React from "react";
-import style from './style.css'
+import React from 'react'
+import './Header.css'
 
-
-function Header({titulo,subtitulo}){
-    return(
-       
-
-       
-       <header>
-        <h1>{titulo}</h1>
-        <h2>{subtitulo}</h2>
-       </header>
-        
-     
+function  Header({titulo,subtitulo}){
+    return (
+        <>
+           <Header>
+           <h1>{titulo}</h1>
+            <h2>{subtitulo}</h2>
+           </Header>
+        </>
     )
 }
 
